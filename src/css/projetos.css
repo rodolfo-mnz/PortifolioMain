@@ -1,0 +1,104 @@
+.projetos {
+    background-color: var(--cor-section-bg);
+    padding: 8rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.container-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.projeto {
+    background: var(--cor-card);
+    border-radius: var(--border-radius-grande);
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--cor-borda);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.projeto:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: var(--sombra-forte);
+    border-color: var(--cor-primaria);
+}
+
+.projeto a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.projeto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.projeto:hover img {
+    transform: scale(1.05);
+}
+
+.projeto h3 {
+    font-size: var(--fonte-grande);
+    font-weight: 600;
+    color: var(--cor-texto);
+    margin: 24px 24px 16px;
+    font-family: var(--fonte-secundaria);
+    transition: color 0.3s ease;
+}
+
+.informacoes-projeto {
+    padding: 0 24px 24px;
+}
+
+.informacoes-projeto p {
+    font-size: var(--fonte-normal);
+    line-height: 1.6;
+    color: var(--cor-texto-claro);
+    margin-bottom: 16px;
+    transition: color 0.3s ease;
+}
+
+.informacoes-projeto a {
+    color: var(--cor-primaria);
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.informacoes-projeto a:hover {
+    color: var(--cor-hover);
+    transform: translateX(4px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-projetos {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .projeto h3 {
+        font-size: var(--fonte-normal);
+        margin: 20px 20px 12px;
+    }
+    
+    .informacoes-projeto {
+        padding: 0 20px 20px;
+    }
+    
+    .informacoes-projeto p {
+        font-size: var(--fonte-pequena);
+    }
+}
+

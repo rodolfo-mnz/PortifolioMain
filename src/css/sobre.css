@@ -1,0 +1,50 @@
+.sobre-mim {
+    background-color: var(--cor-section-bg);
+    padding: 8rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.sobre-mim .row {
+    align-items: center;
+    justify-content: center;
+}
+
+.informacoes-sobre-mim {
+    flex: 0 0 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.informacoes-sobre-mim p {
+    font-size: var(--fonte-normal);
+    line-height: 1.8;
+    margin-bottom: 24px;
+    color: var(--cor-texto-claro);
+    transition: color 0.3s ease;
+}
+
+.informacoes-sobre-mim p strong {
+    color: var(--cor-texto);
+    font-weight: 600;
+}
+
+.div-botao-download {
+    margin-top: 32px;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .sobre-mim {
+        padding: 6rem 0;
+    }
+    
+    .informacoes-sobre-mim {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .informacoes-sobre-mim p {
+        font-size: var(--fonte-pequena);
+    }
+}
