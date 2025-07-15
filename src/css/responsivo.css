@@ -13,6 +13,11 @@
   .home .texto-home h2 {
     font-size: 2.4rem;
   }
+
+  .redes-sociais { 
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 900px) {
@@ -119,13 +124,13 @@
   font-size: var(--fonte-extra-grande);
   font-weight: 600;
   margin-bottom: 32px;
-  color: var(--cor-primaria);
+  color: #222; /* Cor sólida escura para melhor contraste */
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  background: none; /* Remove gradiente no white-mode */
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  text-fill-color: initial;
   text-shadow: 0 2px 8px rgba(99,102,241,0.08);
   transition: color 0.3s, text-shadow 0.3s;
 }
