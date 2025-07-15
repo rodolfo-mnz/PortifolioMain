@@ -1,0 +1,141 @@
+/* Responsividade geral extraída dos arquivos originais e aprimorada */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home .texto-home h1 {
+    font-size: 4rem;
+  }
+  .home .texto-home h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 90vw;
+    padding: 0 10px;
+  }
+  .section {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .theme-toggle {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.6rem;
+  }
+  .home .full-screen {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0 60px;
+  }
+  .home .texto-home,
+  .home .img-home {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .home .texto-home h1 {
+    font-size: 3.2rem;
+  }
+  .home .texto-home h2 {
+    font-size: 2rem;
+  }
+  .home .img-home .img-box {
+    max-width: 300px;
+    margin-top: 40px;
+  }
+  .home .img-home .img-box img {
+    height: 300px;
+  }
+  .container-habilidades {
+    flex-direction: column;
+    align-items: center;
+  }
+  .habilidade {
+    max-width: 90vw;
+    margin-bottom: 32px;
+  }
+  .container-projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projeto {
+    max-width: 90vw;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-title h2 {
+    font-size: 2.2rem;
+  }
+  .footer h2 {
+    font-size: 1.6rem;
+  }
+  .botao, .botao-download {
+    font-size: 1.2rem;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home .texto-home h1 {
+    font-size: 2.8rem;
+  }
+  .home .texto-home h2 {
+    font-size: 1.8rem;
+  }
+  .home .img-home .img-box {
+    max-width: 250px;
+  }
+  .home .img-home .img-box img {
+    height: 250px;
+  }
+  .container {
+    padding: 0 5px;
+  }
+  .section {
+    padding: 2rem 0;
+  }
+}
+
+/* Melhorias visuais para o h2 da profissão no white mode */
+.destaque-profissao {
+  font-family: var(--fonte-secundaria);
+  font-size: var(--fonte-extra-grande);
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: var(--cor-primaria);
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0 2px 8px rgba(99,102,241,0.08);
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+[data-theme="dark"] .destaque-profissao {
+  color: var(--cor-accent);
+  background: linear-gradient(90deg, #c084fc 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0 2px 8px rgba(168,85,247,0.12);
+} 

@@ -173,13 +173,3 @@ body {
 .theme-toggle:active {
     transform: scale(0.95);
 }
-
-@media (max-width: 768px) {
-  .theme-toggle {
-    top: 15px;
-    right: 15px;
-    width: 45px;
-    height: 45px;
-    font-size: 1.6rem;
-  }
-}
